@@ -16,8 +16,21 @@
     .container {
       max-width: 800px;
       margin: auto;
-      padding: 4rem 2rem;
+      padding: 2rem;
       text-align: center;
+    }
+
+    .logo {
+      width: 100px;
+      margin-bottom: 1rem;
+    }
+
+    .banner {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      margin-bottom: 2rem;
+      border-radius: 8px;
     }
 
     h1 {
@@ -45,6 +58,11 @@
 
     a.button:hover {
       background: #333;
+    }
+
+    .socials img {
+      width: 32px;
+      margin-top: 1rem;
     }
 
     form {
@@ -83,11 +101,20 @@
 </head>
 <body>
   <div class="container">
+    <img src="images/logo.png" alt="Bhangra Bangalore Logo" class="logo" />
+    <img src="images/banner.jpg" alt="Bhangra Bangalore Banner" class="banner" />
+
     <h1>Bhangra Bangalore</h1>
     <p>Your one-stop solution for all Bhangra needs in Bangalore.<br>
     Workshops, Performances, Classes, Events, and more!</p>
 
     <a class="button" href="https://www.instagram.com/bhangrablr" target="_blank">Follow us on Instagram</a>
+
+    <div class="socials">
+      <a href="https://www.instagram.com/bhangrablr" target="_blank">
+        <img src="images/instagram.png" alt="Instagram Icon" />
+      </a>
+    </div>
 
     <section id="contact">
       <h2 style="margin-top: 3rem; margin-bottom: 1rem;">Get in Touch</h2>
@@ -111,3 +138,4 @@
   </div>
 </body>
 </html>
+
