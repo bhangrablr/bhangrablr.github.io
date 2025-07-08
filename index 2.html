@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bhangra Bangalore</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #ff4081;
+      --background: #121212;
+      --text: #e0e0e0;
+      --accent: #1f1f1f;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--background);
+      color: var(--text);
+    }
+
+    header {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+
+    header img {
+      width: 100%;
+      max-height: 500px;
+      object-fit: cover;
+      filter: brightness(70%);
+    }
+
+    .overlay-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      text-shadow: 1px 1px 6px #000;
+    }
+
+    .overlay-text h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .overlay-text p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .button {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 1.5rem;
+      font-weight: bold;
+    }
+
+    .button:hover {
+      background-color: #e91e63;
+    }
+
+    form {
+      margin-top: 3rem;
+      text-align: left;
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1.5rem;
+      background: var(--accent);
+      border: 1px solid #444;
+      color: var(--text);
+      border-radius: 4px;
+    }
+
+    form button {
+      background-color: var(--primary-color);
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    form button:hover {
+      background-color: #e91e63;
+    }
+
+    .socials {
+      margin-top: 2rem;
+    }
+
+    .socials img {
+      width: 32px;
+      margin: 0 0.5rem;
+      filter: brightness(0) invert(1);
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #777;
+      padding: 2rem 0 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="images/banner.jpg" alt="Bhangra Performance Banner">
+    <div class="overlay-text">
+      <h1>Bhangra Bangalore</h1>
+      <p>Your one-stop solution for all Bhangra needs in Bangalore</p>
+    </div>
+  </header>
+
+  <div class="container">
+    <a class="button" href="https://instagram.com/bhangrablr" target="_blank">Follow us on Instagram</a>
+
+    <div class="socials">
+      <a href="https://instagram.com/bhangrablr" target="_blank">
+        <img src="images/instagram.png" alt="Instagram Icon">
+      </a>
+    </div>
+
+    <section id="contact">
+      <h2 style="margin-top: 3rem;">Get in Touch</h2>
+      <form action="mailto:youremail@example.com" method="post" enctype="text/plain">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="Name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="Email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="Message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </div>
+
+  <footer>
+    <p>© 2025 Bhangra Bangalore. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
